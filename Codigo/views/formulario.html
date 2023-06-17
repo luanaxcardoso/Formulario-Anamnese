@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academia</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<script>
+    function exibirAlerta(mensagem) {
+        alert(mensagem);
+    }
+</script>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Logo da Academia" class="logo">
+        <h1>FORMULÁRIO DE ANAMNESE</h1><br>
+    </header>
+    <form action="/add-formulario" method="POST" onsubmit="exibirAlerta('Cadastro realizado com sucesso!')">
+        <div class="inserir">
+            <label>NOME</label>
+            <input type="text" name="nome">
+            <label>CPF</label>
+            <input type="text" name="cpf">
+            <label>IDADE</label>
+            <input type="text" name="idade">
+            <label>TELEFONE</label>
+            <input type="text" name="telefone">
+            <label>E-MAIL</label>
+            <input type="text" name="email">
+            <label>ENDEREÇO</label>
+            <input type="text" name="endereco">
+            <label>PESO</label>
+            <input type="text" name="peso">
+            <label>ALTURA</label>
+            <input type="text" name="altura">
+            <label>LESÕES PRÉVIAS</label>
+            <input type="text" name="lesoes">
+            <label>OBJETIVOS</label>
+            <p class="objetivos">DEFINIR / GANHAR MASSA / PERDER PESO</p>
+            <input type="text" name="objetivo">
+            <div class="radio-buttons">
+                <label for="condicionamento">CONDICIONAMENTO FÍSICO</label>
+                <div class="radio-options">
+                    <input type="radio" name="condicionamento" value="sedentario" id="condicionamentosed">
+                    <label for="condicionamentosed">SEDENTÁRIO</label>
+                    <input type="radio" name="condicionamento" value="ativo" id="condicionamentoativo">
+                    <label for="condicionamentoativo">ATIVO</label>
+                    <input type="radio" name="condicionamento" value="muito-ativo" id="condicionamentomuitoativo">
+                    <label for="condicionamentomuitomativo">MUITO ATIVO</label>
+                </div>
+            </div>
+            <div class="radio-buttons">
+                <label for="fumante">FUMANTE</label>
+                <div class="radio-options">
+                    <input type="radio" name="fumante" value="sim" id="fumante-sim">
+                    <label for="fumante-sim">SIM</label>
+                    <input type="radio" name="fumante" value="nao" id="fumante-nao">
+                    <label for="fumante-nao">NÃO</label>
+                </div>
+            </div>
+            <div class="radio-buttons">
+                <label for="medicamento">USO CONTÍNUO DE MEDICAMENTO</label>
+                <div class="radio-options">
+                    <input type="radio" name="medicamento" value="sim" id="medicamento-sim">
+                    <label for="medicamento-sim">SIM</label>
+                    <input type="radio" name="medicamento" value="nao" id="medicamento-nao">
+                    <label for="medicamento-nao">NÃO</label>
+                </div>
+            </div>
+            <button class="botao" type="submit">ENVIAR</button>
+        </div>
+        </form>
+        <footer class="footer"><p>
+            Academia Hard Work Center Fit - Todos os direitos reservados &copy; 2023</p>
+        </footer>
+</body>
+</html>
+        
+            
