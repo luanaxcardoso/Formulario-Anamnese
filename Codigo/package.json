@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2",
+    "mysql": "^2.18.1",
+    "mysql2": "^3.3.3",
+    "sequelize": "^6.32.0"
+  },
+  "name": "cadastro",
+  "version": "1.0.0",
+  "description": "formulario de cadastro de usuario",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Luana",
+  "license": "ISC"
+}
